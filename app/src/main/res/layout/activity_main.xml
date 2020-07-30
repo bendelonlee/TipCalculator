@@ -24,10 +24,6 @@
         android:layout_height="wrap_content"
         android:text="TIP CALCULATOR" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <EditText
         android:textColor="@color/colorTextSecondary"
         android:textColorHint="@color/colorTextSecondary"
@@ -59,10 +55,6 @@
         android:layout_height="wrap_content"
         android:text="Select Tip percentage" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <TextView
         android:textColor="@color/colorTextSecondary"
         android:textStyle="italic"
@@ -84,12 +76,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <Button
         android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimary"
+
         android:layout_margin="@dimen/margin"
         android:textSize="@dimen/btnReset"
         android:id="@+id/btnReset"
@@ -98,9 +88,9 @@
         android:text="Reset" />
 
     <TextView
-
+        android:background="@color/colorTextViewBackground"
         android:layout_margin="@dimen/margin"
-
+        android:textColor="@color/colorTextPrimary"
         android:gravity="center"
         android:textSize="@dimen/txtResult"
         android:id="@+id/txtResult"
