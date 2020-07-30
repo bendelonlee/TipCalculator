@@ -14,10 +14,10 @@
     <TextView
         android:gravity="center"
 
-        android:id="@+id/textView"
+        android:id="@+id/txtTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TIP CALCULATOR" />
 
     <Space
         android:layout_width="match_parent"
@@ -26,20 +26,21 @@
     <EditText
         android:gravity="center"
 
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edtMealCost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:hint="Meal cost"
         android:text="Name" />
 
     <TextView
         android:gravity="center"
 
-        android:id="@+id/textView2"
+        android:id="@+id/txtSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Select Tip percentage" />
 
     <Space
         android:layout_width="match_parent"
@@ -48,10 +49,10 @@
     <TextView
         android:gravity="center"
 
-        android:id="@+id/textView3"
+        android:id="@+id/txtPercentage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="15%" />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -63,17 +64,17 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnReset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Reset" />
 
     <TextView
         android:gravity="center"
 
-        android:id="@+id/textView4"
+        android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TOTAL" />
 </LinearLayout>
 
