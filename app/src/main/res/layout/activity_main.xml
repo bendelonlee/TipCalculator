@@ -9,10 +9,14 @@
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="1dp"
     android:gravity="center"
+    android:background="@color/colorPrimary"
     >
 
     <TextView
+        android:textColor="@color/colorTextPrimary"
+        android:background="@color/colorTextViewBackground"
         android:layout_margin="@dimen/margin"
+        android:textStyle="bold"
         android:gravity="center"
         android:textSize="@dimen/txtTitle"
         android:id="@+id/txtTitle"
@@ -25,19 +29,21 @@
         android:layout_height="wrap_content" />
 
     <EditText
+        android:textColor="@color/colorTextSecondary"
+        android:textColorHint="@color/colorTextSecondary"
+        android:maxLength="7"
 
         android:textSize="@dimen/edtMeal"
         android:layout_margin="@dimen/margin"
 
         android:gravity="center"
-
         android:id="@+id/edtMeal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:hint="Meal cost"
-        android:text="Name" />
+        />
 
     <TextView
         android:layout_margin="@dimen/margin"
