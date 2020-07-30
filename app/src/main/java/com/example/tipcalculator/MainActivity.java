@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -37,7 +38,26 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //Set up seek bar
+        SeekBar slider = (SeekBar) findViewById(R.id.seekBar);
+        slider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                tipPercentage = progress;
+                displayTipPercentage();
+                displayTotal();
+            }
 
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     public void displayTotal() {
@@ -55,5 +75,10 @@ public class MainActivity extends AppCompatActivity {
         TextView txtResult =  (TextView) findViewById(R.id.txtResult);
         String messageTotal = String.format(Locale.getDefault(), "$ %.2f", totalCost);
         txtResult.setText(messageTotal);
+    }
+
+    public void displayTipPercentage(){
+        TextView display = (TextView) findViewById(R.id.txtPercentage);
+        display.setText(tipPercentage + "%");
     }
 }
