@@ -43,11 +43,14 @@
         android:ems="10"
         android:inputType="numberDecimal"
         android:hint="Meal cost"
+        android:textStyle="italic"
+
         />
 
     <TextView
         android:layout_margin="@dimen/margin"
-
+        android:textStyle="italic"
+        android:textColor="@color/colorTextSecondary"
         android:gravity="center"
 
         android:id="@+id/txtSelect"
@@ -61,6 +64,9 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:textColor="@color/colorTextSecondary"
+        android:textStyle="italic"
+
         android:layout_margin="@dimen/margin"
 
         android:gravity="center"
@@ -72,7 +78,8 @@
 
     <SeekBar
         android:layout_margin="@dimen/margin"
-
+        android:progress="15"
+        android:max="50"
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
